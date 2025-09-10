@@ -16,7 +16,7 @@ public class Personagem {
         if(energia >= 2){
         System.out.println( nome + "\ncaçando");
         energia -=2;
-        fome = Math.min(fome + 1, 10);
+        fome = Math.min(fome + 1, 10); //Math.min(a, b) retorna o menor valor
         sono = Math.min(sono + 1, 10);
 
     } else {
@@ -25,12 +25,17 @@ public class Personagem {
     }
 
     public void comer(){
-        fome -=1;
+       if(fome >=1){
         System.out.println(nome + "comendo");
-    }
+        energia = Math.min(energia + 1, 10);
+        fome = fome - 1;
+    }else{
+        System.out.println(nome + "sem fome");
+    }}
 
     public void dormi(){ 
         sono -=1; 
+        energia +=1;
         System.out.println(nome + "dormindo");
     }
 
