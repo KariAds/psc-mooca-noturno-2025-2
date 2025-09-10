@@ -1,5 +1,4 @@
-import java.text.StringCharacterIterator;
-
+package condicional;
 import javax.swing.JOptionPane;
 
 public class SwitchCase {

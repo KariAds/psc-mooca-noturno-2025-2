@@ -1,3 +1,4 @@
+package condicional;
 import javax.swing.JOptionPane;
 
 public class IfEncadeado {
